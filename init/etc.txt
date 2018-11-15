@@ -1,0 +1,16 @@
+Mathtype:
+=========
+Cut and copy: MathML 2.0 (namespace)
+
+office:
+=======
+check email
+
+git key:
+========
+check email and add ssh to agent:
+https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent
+
+vscode:
+========
+https://gist.github.com/lironpx/9013e906e395d9117f688c546fa9229a

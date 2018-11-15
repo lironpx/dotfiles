@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # Install command-line tools using Homebrew.
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Make sure we’re using the latest Homebrew.
 brew update
@@ -35,9 +36,6 @@ fi;
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-# Install GnuPG to enable PGP-signing commits.
-brew install gnupg
-
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
 brew install grep
@@ -45,41 +43,8 @@ brew install openssh
 brew install screen
 brew install homebrew/php/php56 --with-gmp
 
-# Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
-
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
-
 # Install other useful binaries.
 brew install ack
-#brew install exiv2
 brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
@@ -95,5 +60,48 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
+#Install Liron packages
+brew install curl
+brew install go
+brew install jq
+brew install python
+brew install python3
+brew install diff-so-fancy
+brew install michaeldfallen/formula/git-radar
+
 # Remove outdated versions from the cellar.
+brew cleanup
+
+# Get cask
+brew tap caskroom/cask
+brew tap homebrew/cask-versions
+
+# Install casks
+brew cask install google-chrome
+brew cask install docker
+brew cask install iterm2
+brew cask install vlc
+brew cask install spectacle
+brew cask install teamviewer
+brew cask install whatsapp
+brew cask install the-unarchiver
+brew cask install android-file-transfer
+brew cask install keepingyouawake
+brew cask install slack
+brew cask install beardedspice
+brew cask install spotify
+brew cask install transmission
+brew cask install mathtype
+brew cask install usb-overdrive
+brew cask install visual-studio-code
+brew cask install postman
+brew cask install mplayer-osx-extended
+brew cask install authy
+brew cask install zeplin
+brew cask install google-cloud-sdk
+brew cask install hammerspoon
+brew cask install postico
+brew cask install robo-3t
+
+# Cask Cleanup
 brew cleanup
