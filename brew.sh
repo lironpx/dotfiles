@@ -69,6 +69,7 @@ brew install python3
 brew install diff-so-fancy
 brew install michaeldfallen/formula/git-radar
 brew install redis
+brew install yarn --without-node
 
 # Remove outdated versions from the cellar.
 brew cleanup
